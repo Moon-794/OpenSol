@@ -1,0 +1,10 @@
+# ninja log v5
+11	1060	7445112288707876	CMakeFiles/OpenSol.dir/src/main.cpp.obj	f5d13b772dcb6f0e
+12	129	7445113918550858	build.ninja	e9cc05bd65d17b15
+18	112	7445112188505824	bin/OpenSol.exe	6b1a92c9860e103f
+2	121	7445113918550858	build.ninja	e9cc05bd65d17b15
+17	140	7445113920101247	bin/OpenSol.exe	6fbd5e454df73b91
+6	1041	7445115005984210	CMakeFiles/OpenSol.dir/src/main.cpp.obj	f5d13b772dcb6f0e
+1042	1163	7445115007184292	bin/OpenSol.exe	6fbd5e454df73b91
+17	1043	7445115601960696	CMakeFiles/OpenSol.dir/src/main.cpp.obj	f5d13b772dcb6f0e
+1043	1172	7445115603220778	bin/OpenSol.exe	6fbd5e454df73b91
