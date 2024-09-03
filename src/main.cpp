@@ -3,10 +3,19 @@
 
 int main(int argc, char** args)
 {
-    std::cout << "Hello, World!";
-
-    engine e = engine();
+    engine e;
     e.Init(800, 600);
+
+    GameObject* camera = new GameObject(e.currentScene);
+    GameObject* earth = new GameObject(e.currentScene, "Level");
+
+    camera->addComponent<PlayerMove>(e.window, e.gameTime);
+    e.currentScene->camera = camera;
+
+    Shader* mapShader = new Shader("Shaders/Basic/vertex.vs", "Shaders/Basic/fragment.fs");
+    Model planetModel("Models/Planet/planet.obj");
+
+    earth->addComponent<MeshRenderer>(planetModel.meshes[0], mapShader);
 
     while(!glfwWindowShouldClose(e.window.get()))
     {
